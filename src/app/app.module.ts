@@ -7,13 +7,19 @@ import { TopNavComponent } from './components/shared/top-nav/top-nav.component';
 import { EjercicioIComponent } from './routes/ejercicio-i/ejercicio-i.component';
 import { AgeCalcComponent } from './components/ejercicio-i/age-calc/age-calc.component';
 import { FormsModule } from '@angular/forms';
+import { BienvenidoComponent } from './routes/bienvenido/bienvenido.component';
+import { LoginComponent } from './routes/login/login.component';
+import { ErrorComponent } from './routes/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     EjercicioIComponent,
-    AgeCalcComponent
+    AgeCalcComponent,
+    BienvenidoComponent,
+    LoginComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
