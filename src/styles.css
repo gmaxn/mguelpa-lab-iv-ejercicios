@@ -40,3 +40,8 @@ app-top-nav {
   grid-column: 1 / span 2;
   grid-row: 1;
 }
+
+app-ejercicio-i {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
