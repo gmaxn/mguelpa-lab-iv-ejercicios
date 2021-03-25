@@ -1,0 +1,38 @@
+:host {
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+}
+#login-container {
+    
+    display: inline-flex;
+    flex-direction: column;
+
+    justify-self: center;
+    align-self: center;
+
+    margin: auto;
+    
+    padding: 5px;
+    background-color: grey;
+}
+
+#result-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: grey;
+}
+.conttrol {
+    border: 1px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+#title {
+    font-family: 'Consolas' 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+}

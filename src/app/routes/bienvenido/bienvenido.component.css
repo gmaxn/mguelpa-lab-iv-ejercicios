@@ -1,8 +1,10 @@
 :host {
-    display: inline;
-    text-align: center;
+    border: 1px solid green;
+    flex-direction: column;
 }
+
 p {
+    align-self: center;
     text-align: center;
     font-family: Consolas, 'Courier New', Courier, monospace;
     font-weight: bolder;

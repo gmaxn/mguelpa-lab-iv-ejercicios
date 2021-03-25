@@ -23,12 +23,9 @@ export class AgeCalcComponent implements OnInit {
   }
 
   onReset() {
-
     this.edad1 = '';
     this.edad2 = '';
     this.sum = '';
     this.avg = '';
-
   }
-
 }

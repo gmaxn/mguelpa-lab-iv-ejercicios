@@ -1,0 +1,44 @@
+:host {
+    background-color: rgb(28, 30, 32);
+}
+
+#accordionExample {
+    background-color: rgb(30, 30, 30);
+}
+
+#accordionExample > button {
+    width:100%;
+    text-align: left;
+    padding-left:10px;
+    font-family: consolas, monospace;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #2e2e2e;
+    border: 0px;
+}
+
+#accordionExample > div > div > a {
+    text-decoration: none;
+    color: #818181;
+    font-family: consolas, monospace;
+    font-weight: bold;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    margin-left: 5px;
+    border: 0px;
+}
+
+#accordionExample > div > div {
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    transition: 0.3s;
+    border: 0px;
+}
+
+#accordionExample > div > :hover {
+    background-color: whitesmoke;
+    margin-left: 15px;
+    position: relative;
+}

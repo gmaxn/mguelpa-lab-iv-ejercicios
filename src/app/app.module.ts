@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/shared/top-nav/top-nav.component';
 import { EjercicioIComponent } from './routes/ejercicio-i/ejercicio-i.component';
 import { AgeCalcComponent } from './components/ejercicio-i/age-calc/age-calc.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BienvenidoComponent } from './routes/bienvenido/bienvenido.component';
 import { LoginComponent } from './routes/login/login.component';
 import { ErrorComponent } from './routes/error/error.component';
+import { SideNavComponent } from './components/shared/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import { ErrorComponent } from './routes/error/error.component';
     AgeCalcComponent,
     BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
