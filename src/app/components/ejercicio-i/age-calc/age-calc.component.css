@@ -1,42 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 :host {
-    width: 100%;
-    display: flex;
-    border: 1px solid red;
-
+  width: 100%;
+  display: flex;
+  background-color: rgb(30, 30, 30);
 }
 
-#calc-container {
-
+#calc-form {
     display: inline-flex;
     flex-direction: column;
-
+  
     justify-self: center;
     align-self: center;
-
+  
     margin: auto;
-    
+  
     padding: 5px;
     background-color: grey;
-}
-
-#result-wrapper {
-    display: inline-flex;
-    flex-direction: row;
-    background-color: grey;
-}
-
-.conttrol {
-    border: 1px solid black;
-    display: inline-flex;
-    flex-direction: column;
-    margin: 0 0 10px 0;
-    padding: 5px;
+  
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.338);
+    background-color: rgba(206, 206, 206, 0.153);
+  
+    border-radius: 10px;
+  
+    width: 300px;
+  }
+  
+  #calc-form > .form_header {
+    border-top: 0;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+  }
+  
+  #calc-form > .form_body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  
+  #calc-form > .form_body > .form-group > .clear_btn {
+    color: white;
+    background-color: #590b0b;
+    width: 100px;
+    margin-top: 15px;
+  }
+  
+  #calc-form > .form_body > .form-group > .clear_btn:hover {
+    color: grey;
     background-color: whitesmoke;
-}
-
-#title {
-    font-family: 'Consolas' 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: x-large;
-    padding-bottom: 10px;
-}
+  }
+  
+  #calc-form > .form_body > .form-group > .calculate_btn {
+    color: white;
+    background-color: #ffc312;
+    width: 100px;
+    margin-top: 15px;
+  }
+  
+  #calc-form > .form_body > .form-group > .calculate_btn:hover {
+    color: green;
+    background-color: white;
+  }

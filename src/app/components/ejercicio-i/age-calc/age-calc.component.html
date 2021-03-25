@@ -1,24 +1,73 @@
-<div id="calc-container">
-    <p id="title">Claculadora</p>
-    <div class="conttrol">
-        <label for="">Edad 1:</label>
-        <input type="number" name="" id="" [(ngModel)]="edad1">
+<div id="calc-form">
+
+    <div class="form_header">
+        <h3>Age Calculator</h3>
     </div>
-    <div class="conttrol">
-        <label for="">Edad 2:</label>
-        <input type="number" name="" id="" [(ngModel)]="edad2">
-    </div>
-    <div id="result-wrapper">
-        <div class="conttrol">
-            <label for="">Suma:</label>
-            <input type="number" name="" id="" disabled [(ngModel)]="sum">
+
+    <div class="form_body">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="number" class="form-control" placeholder="Enter first age" [(ngModel)]="edad1">
+
         </div>
-        <div class="conttrol">
-            <label for="">Promedio:</label>
-            <input type="number" name="" id="" disabled [(ngModel)]="avg">
+
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="number" class="form-control" placeholder="Enter second age" [(ngModel)]="edad2">
         </div>
-    </div>
+
+        <div class="input-group form-group " style="justify-content: space-between;">
+            <div class="input-group form-group" style="width:47%">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-plus"></i></span>
+                </div>
+                <input type="number" class="form-control" placeholder="sum" disabled [(ngModel)]="sum">
     
-    <button (click)="onCalculate()">Calcular</button>
-    <button (click)="onReset()">Limpiar</button>
+            </div>
+    
+            <div class="input-group form-group" style="width:47%;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="number" class="form-control" placeholder="avg" disabled [(ngModel)]="avg">
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <button (click)="onReset()" class="btn float-left clear_btn">Clear</button>
+            <button (click)="onCalculate()" class="btn float-right calculate_btn">Calculate</button>
+        </div>
+
+    </div>
+
+
 </div>
+
+
+<!-- <div class="conttrol">
+    <label for="">Edad 1:</label>
+    <input type="number" name="" id="" [(ngModel)]="edad1">
+</div>
+<div class="conttrol">
+    <label for="">Edad 2:</label>
+    <input type="number" name="" id="" [(ngModel)]="edad2">
+</div>
+<div id="result-wrapper">
+    <div class="conttrol">
+        <label for="">Suma:</label>
+        <input type="number" name="" id="" disabled [(ngModel)]="sum">
+    </div>
+    <div class="conttrol">
+        <label for="">Promedio:</label>
+        <input type="number" name="" id="" disabled [(ngModel)]="avg">
+    </div>
+</div>
+
+<button (click)="onCalculate()">Calcular</button>
+<button (click)="onReset()">Limpiar</button> -->
